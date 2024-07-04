@@ -18,6 +18,8 @@
 		89CCEF832C3750C000433BC0 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CCEF822C3750C000433BC0 /* ViewCode.swift */; };
 		89CCEF8B2C37518A00433BC0 /* ListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CCEF8A2C37518A00433BC0 /* ListsViewController.swift */; };
 		89CCEF8D2C3751B000433BC0 /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CCEF8C2C3751B000433BC0 /* ListsView.swift */; };
+		89CCEF902C37682E00433BC0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CCEF8F2C37682E00433BC0 /* Coordinator.swift */; };
+		89CCEF962C376B6900433BC0 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CCEF952C376B6900433BC0 /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		89CCEF822C3750C000433BC0 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
 		89CCEF8A2C37518A00433BC0 /* ListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsViewController.swift; sourceTree = "<group>"; };
 		89CCEF8C2C3751B000433BC0 /* ListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsView.swift; sourceTree = "<group>"; };
+		89CCEF8F2C37682E00433BC0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		89CCEF952C376B6900433BC0 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		8949BE562C360A6300871C69 /* ViewCode+MVC+Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				89CCEF8E2C37682400433BC0 /* Coordinator */,
 				89CCEF882C37517A00433BC0 /* Features */,
 				8949BE572C360A6300871C69 /* AppDelegate.swift */,
 				8949BE592C360A6300871C69 /* SceneDelegate.swift */,
@@ -147,6 +152,15 @@
 				89CCEF8C2C3751B000433BC0 /* ListsView.swift */,
 			);
 			path = ListsView;
+			sourceTree = "<group>";
+		};
+		89CCEF8E2C37682400433BC0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				89CCEF8F2C37682E00433BC0 /* Coordinator.swift */,
+				89CCEF952C376B6900433BC0 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,11 +294,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				89CCEF8D2C3751B000433BC0 /* ListsView.swift in Sources */,
+				89CCEF962C376B6900433BC0 /* MainCoordinator.swift in Sources */,
 				89CCEF832C3750C000433BC0 /* ViewCode.swift in Sources */,
 				89CCEF8B2C37518A00433BC0 /* ListsViewController.swift in Sources */,
 				8949BE582C360A6300871C69 /* AppDelegate.swift in Sources */,
 				8949BE5A2C360A6300871C69 /* SceneDelegate.swift in Sources */,
 				8949BE622C360A6300871C69 /* ViewCode_MVC_Coordinator.xcdatamodeld in Sources */,
+				89CCEF902C37682E00433BC0 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
