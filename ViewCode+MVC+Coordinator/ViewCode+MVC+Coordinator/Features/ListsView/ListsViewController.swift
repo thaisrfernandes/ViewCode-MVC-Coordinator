@@ -24,6 +24,6 @@ class ListsViewController: UIViewController, NavigatableViewController {
 
 extension ListsViewController: ListsViewDelegate {
     func onTapButton() {
-        coordinator?.goTo(ListDetailViewController())
+        coordinator?.goTo(ListDetailViewController(title: "Details"))
     }
 }
