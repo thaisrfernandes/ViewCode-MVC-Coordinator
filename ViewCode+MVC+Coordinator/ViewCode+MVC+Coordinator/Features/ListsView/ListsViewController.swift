@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ListsViewController: UIViewController {
+class ListsViewController: UIViewController, NavigatableViewController {
     weak var coordinator: MainCoordinator?
     
     let screen = ListsView()
@@ -24,6 +24,6 @@ class ListsViewController: UIViewController {
 
 extension ListsViewController: ListsViewDelegate {
     func onTapButton() {
-        coordinator?.goToListDetails()
+        coordinator?.goTo(ListDetailViewController())
     }
 }

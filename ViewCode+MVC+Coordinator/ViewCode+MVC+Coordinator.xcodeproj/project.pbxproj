@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89262AD82C38802900423846 /* NavigatableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89262AD72C38802900423846 /* NavigatableViewController.swift */; };
 		8949BE582C360A6300871C69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8949BE572C360A6300871C69 /* AppDelegate.swift */; };
 		8949BE5A2C360A6300871C69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8949BE592C360A6300871C69 /* SceneDelegate.swift */; };
 		8949BE622C360A6300871C69 /* ViewCode_MVC_Coordinator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8949BE602C360A6300871C69 /* ViewCode_MVC_Coordinator.xcdatamodeld */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		89262AD72C38802900423846 /* NavigatableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatableViewController.swift; sourceTree = "<group>"; };
 		8949BE542C360A6300871C69 /* ViewCode+MVC+Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViewCode+MVC+Coordinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8949BE572C360A6300871C69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8949BE592C360A6300871C69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			children = (
 				89CCEF8F2C37682E00433BC0 /* Coordinator.swift */,
 				89CCEF952C376B6900433BC0 /* MainCoordinator.swift */,
+				89262AD72C38802900423846 /* NavigatableViewController.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				89CCEF8D2C3751B000433BC0 /* ListsView.swift in Sources */,
 				89CCEF962C376B6900433BC0 /* MainCoordinator.swift in Sources */,
 				89CCEF832C3750C000433BC0 /* ViewCode.swift in Sources */,
+				89262AD82C38802900423846 /* NavigatableViewController.swift in Sources */,
 				89CCEF8B2C37518A00433BC0 /* ListsViewController.swift in Sources */,
 				8949BE582C360A6300871C69 /* AppDelegate.swift in Sources */,
 				8949BE5A2C360A6300871C69 /* SceneDelegate.swift in Sources */,

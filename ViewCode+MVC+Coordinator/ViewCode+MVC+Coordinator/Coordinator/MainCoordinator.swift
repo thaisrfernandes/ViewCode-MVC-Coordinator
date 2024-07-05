@@ -8,6 +8,8 @@
 import UIKit
 
 class MainCoordinator: Coordinator {
+    typealias CoordinatedViewController = UIViewController & NavigatableViewController
+    
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     
@@ -21,8 +23,8 @@ class MainCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: false)
     }
     
-    func goToListDetails() {
-        let vc = ListDetailViewController()
+    func goTo(_ viewController: CoordinatedViewController) {
+        var vc = viewController
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }

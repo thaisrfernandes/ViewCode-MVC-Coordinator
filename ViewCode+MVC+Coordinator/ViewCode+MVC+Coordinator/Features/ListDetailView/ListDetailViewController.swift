@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ListDetailViewController: UIViewController {
+class ListDetailViewController: UIViewController, NavigatableViewController {
     weak var coordinator: MainCoordinator?
 
     let screen = ListDetailView()
