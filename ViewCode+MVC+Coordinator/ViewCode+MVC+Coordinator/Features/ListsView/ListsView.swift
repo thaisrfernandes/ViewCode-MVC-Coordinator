@@ -7,34 +7,43 @@
 
 import UIKit
 
+protocol ListsViewDelegate {
+    func onTapButton()
+}
+
 final class ListsView: UIView {
+    var delegate: ListsViewDelegate?
     
-    private lazy var label: UILabel = {
-        let label = UILabel()
-        label.text = "Hello, world!"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .label
-        return label
+    private lazy var button: UIButton = {
+        let button = UIButton()
+        button.setTitle("Navigate", for: .normal)
+        button.addTarget(self, action: #selector(onTapButton), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
     }()
     
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
-        setupView()
+        self.setupView()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc func onTapButton() {
+        self.delegate?.onTapButton()
     }
 }
 
 extension ListsView: ViewCode {
     func buildViewHierarchy() {
-        addSubview(label)
+        addSubview(button)
     }
     
     func setupConstraints() {
-        label.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor).isActive = true
-        label.centerYAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerYAnchor).isActive = true
+        button.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor).isActive = true
+        button.centerYAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerYAnchor).isActive = true
     }
     
     func setupAdditionalConfigs() {

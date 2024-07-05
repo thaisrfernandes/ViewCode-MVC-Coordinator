@@ -17,6 +17,13 @@ class MainCoordinator: Coordinator {
     
     func start() {
         let vc = ListsViewController()
+        vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
+    }
+    
+    func goToListDetails() {
+        let vc = ListDetailViewController()
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: true)
     }
 }
